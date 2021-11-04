@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <title>360&deg; Image</title>
     <meta name="description" content="360&deg; Image - A-Frame">
-    <script src="./aframe-master.js"></script>
+    <script src="https://meowljane.github.io/cube/aframe-master.js"></script>
   </head>
   <body>
     <a-scene>
-      <a-sky src="./wild2.gif" rotation="0 -130 0"></a-sky>
-
+      
+<a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 70000">
+        <a-sphere radius="1" position="4 12 4" color="#f1f1f1" fog="true" src="https://previews.123rf.com/images/wutichaistudio/wutichaistudio2002/wutichaistudio200200537/139825193-washed-sand-texture-and-background-wall-made-from-fine-and-coarse-sand-washing-mix-with-cement-morta.jpg"></a-sphere>
+</a-entity>
+      <a-sky src="https://meowljane.github.io/cube/wild2.gif" rotation="0 -130 0"></a-sky>
     </a-scene>
   </body>
 </html>
