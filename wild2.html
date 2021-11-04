@@ -9,9 +9,16 @@
   
   <body>
     <a-scene>
-<a-sphere position="1 8 2" animation="property: components.material.material.color; type: color; from: red; to:white; dur: 1000; dir: alternate; loop: true"
-animation__2="property: scale; from: 0.03 0.03 0.03; to: 0.01 0.01 0.01; dur: 1000; dir: alternate; loop: true"></a-sphere>
+<a-sphere position="1 8 2" animation="property: components.material.material.color; type: color; from: #1c2e3c; to:white; dur: 1000; dir: alternate; loop: true"
+animation__2="property: scale; to: 0.03 0.03 0.03; from: 0.01 0.01 0.01; dur: 1000; dir: alternate; loop: true"></a-sphere>
 
+ <a-sphere position="1.5 7 1.9" animation="property: components.material.material.color; type: color; from: #1c2e3c; to:white; dur: 1100; dir: alternate; loop: true"
+animation__2="property: scale; to: 0.03 0.03 0.03; from: 0.01 0.01 0.01; dur: 1100; dir: alternate; loop: true"></a-sphere>
+      
+       <a-sphere position="3 7 1.5" animation="property: components.material.material.color; type: color; from: #1c2e3c; to:white; dur: 800; dir: alternate; loop: true; delay: 400"
+animation__2="property: scale; to: 0.02 0.02 0.02; from: 0.01 0.01 0.01; dur: 800; dir: alternate; loop: true;delay: 400"></a-sphere>
+      
+      
       <a-sky src="https://meowljane.github.io/cube/wild2.gif" rotation="0 -130 0"></a-sky>
     </a-scene>
   </body>
