@@ -1,17 +1,20 @@
+<head>
+  <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/tizzle/aframe-orbit-controls-component/master/dist/aframe-orbit-controls-component.min.js"></script>
+</head>
 
-<html>
-  <head>
-    <script src="https://mayognaise.github.io/aframe-gif-component/build.js"></script>
+<body>
+  <a-scene>
+    <a-sphere position="4 6 1" radius="0.04" material="color:#fdb619; roughness:1; metalness:0.5;">
+      <a-animation attribute="scale" direction="alternate" from="0.25 0.25 0.25" to="1 1 1" dur="1500"repeat="indefinite"
+></a-animation>
+      <a-animation attribute="color" direction="alternate" from="white" to="red"dur="1500"repeat="indefinite"
+></a-animation>
+    </a-sphere>
+    
 
-  </head>
-  <body>
     
+  <a-sky src="https://meowljane.github.io/cube/wild2.gif" rotation="0 -130 0"></a-sky>
     
-    <a-scene>
-      <a-assets></a-assets>
-      <a-entity position="0 10 -6">
-      <a-entity geometry="primitive:circle;" position="-1.5 1.5 0" material="shader:gif;src:url(https://images.squarespace-cdn.com/content/v1/5d122e0d694a030001ef945a/1577490200973-IQDIGS0TK6H5IA2M9ZDP/supernova.gif);" gif=""></a-entity>
-      <a-sky src="https://meowljane.github.io/cube/wild2.gif" rotation="0 -130 0"></a-sky>
-    </a-scene>    
-  </body>
-</html>
+  </a-scene>
+</body>
